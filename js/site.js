@@ -71,7 +71,7 @@ function updateCreateCard(){
 	$('#createcard_researchtitle').html(research);
 	$('#createcard_researchdetails').html(answers[3][0]);
 	if(research!=undefined){
-		$('#createcard_researchimage').html('<img width="100%" src="../images/'+research+'.gif" />');
+		$('#createcard_researchimage').html('<img width="100%" src="images/'+research+'.gif" />');
 	}	
 }
 
@@ -133,7 +133,7 @@ function createCard(cardOptions,index){
 	                    <p class="researchdetails">{{ researchdetails }}</p>
 	                </div>
 	                <div class="col-4">
-	                    <div id="researchimage"><img width="100%" src="../images/{{ researchimage }}.gif" /></div>
+	                    <div id="researchimage"><img width="100%" src="images/{{ researchimage }}.gif" /></div>
 	                </div>
 	            </div>
 	            <p class="projectcard_tagline">A project to <span class="inputtext">{{ goals }}</span> on <span class="inputtext">{{ products }}</span> by <span class="inputtext">{{ research }}</span> <span id="details" class="inputtext">{{ details }}</span></p>
