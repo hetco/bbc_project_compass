@@ -1,0 +1,134 @@
+body {
+	color:#444;
+}
+
+#screen1 {
+	min-height:880px;
+	background-image:url(../images/compass.jpg);
+	background-size:     cover;
+	background-repeat:   no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	padding-left:15px;
+	padding-right:15px;
+}
+
+.questionbox {
+	background-color:#FFF;
+	padding:15px;
+	border: 1px solid #777;
+	margin-bottom:30px;
+}
+
+.cardbox {
+	background-color:#FFF;
+	padding:15px;
+	border: 1px solid #777;
+	box-shadow: 0px 2px 2px #ccc;
+}
+
+.tagbox {
+	min-height:50px;
+	margin-top:15px;
+}
+
+.tag {
+	border: 1px solid #777;
+	padding:5px;
+	margin-right:5px;
+	border-radius:5px;
+	margin-bottom:5px;
+	display: inline-block
+}
+
+.bi-x:hover {
+	cursor:pointer;
+}
+
+
+.productheadline {
+	font-size:1rem;
+}
+
+.researchimage {
+	float:right;
+}
+
+.researchtitle {
+	color:#777;
+	margin-bottom:0px;
+	text-transform: uppercase;
+	font-weight:300;
+}
+
+.projectcard_tagline {
+	font-size:1.25rem;
+	color:#777;
+}
+
+.inputtext {
+	font-weight:700;
+}
+
+.cardbox {
+	min-height:400px;
+	position: relative;
+	margin-bottom:30px;
+	max-width:300px;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+
+.cardbutton {
+	font-size:0.8em;
+	margin-bottom:10px;
+}	
+
+.cardbuttons {
+	position: absolute;
+    bottom: 0px;
+}
+
+.addbox {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:1.25rem;
+}
+
+.menuitem {
+	margin-left:30px;
+}
+
+.title {
+	margin-bottom:-5px;
+	padding-bottom:0px;
+	font-weight: 800;
+	font-size:1.25rem;
+	text-transform: uppercase;
+	text-align:center;
+	color:#000;
+}
+
+#logo {
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top:15px;
+}
+
+#dashboard {
+	margin-top:15px;
+}
+
+#createcardscreen {
+	margin-top:15px;
+}
+
+#createcard {
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom:30px;
+}
