@@ -3,7 +3,7 @@
 let researchMapping = {
         "Explore emerging trends, risks or opportunities":"Exploring",
         "Define the vision / value prop for the product":"Exploring",
-        "Understand the user needs and percenptions broadly":"Understanding",
+        "Understand the user needs and perceptions broadly":"Understanding",
         "Inform the overall product strategy":"Understanding",
         "Develop new features or user journeys":"Generating",
         "Inform development of an existing feature":"Generating",
@@ -17,7 +17,7 @@ function resetScreen1(){
 	$('#createcard_goals').html('...');
 	$('#createcard_research').html('...');
 	$('#createcard_details').html('...');
-	$('#createcard_researchtitle').html('Research');
+	$('#createcard_researchtitle').html('...');
 	$('#createcard_researchdetails').html('...');
 	$("#question0")[0].selectedIndex = 0;
 	$("#question1")[0].selectedIndex = 0;
@@ -129,14 +129,17 @@ function createCard(cardOptions,index){
 	            <div class="row">
 	                <div class="col-8">
 	                    <p class="productheadline">{{ productheadline }}</p>
-	                    <p class="researchtitle">{{ researchtitle }}</p>
-	                    <p class="researchdetails">{{ researchdetails }}</p>
+	                   
+
 	                </div>
 	                <div class="col-4">
 	                    <div id="researchimage"><img width="100%" src="images/{{ researchimage }}.gif" /></div>
 	                </div>
 	            </div>
-	            <p class="projectcard_tagline">A project to <span class="inputtext">{{ goals }}</span> on <span class="inputtext">{{ products }}</span> by <span class="inputtext">{{ research }}</span> <span id="details" class="inputtext">{{ details }}</span></p>
+	            <p class="researchtitle">A project to</p> 
+	            <p class="projectcard_tagline"><span class="inputtext">{{ goals }}</span></p>
+	            <p class="researchtitle">by {{ researchtitle }}</p>
+	            <p class="projectcard_tagline"><span id="details" class="inputtext">{{ details }}</span></p>
         		<div class="cardbuttons">
         			<button id="{{ id2 }}" class="btn btn-light cardbutton">Export <i class="bi bi-save"></i></button>
         			<button id="{{ id3 }}" class="btn btn-light cardbutton">Remove <i class="bi bi-x"></i></button>

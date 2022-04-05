@@ -47,6 +47,10 @@ body {
 
 
 .productheadline {
+	color:#777;
+	margin-bottom:0px;
+	text-transform: uppercase;
+	font-weight:300;
 	font-size:1rem;
 }
 
@@ -59,6 +63,7 @@ body {
 	margin-bottom:0px;
 	text-transform: uppercase;
 	font-weight:300;
+	font-size:1rem;
 }
 
 .projectcard_tagline {
