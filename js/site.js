@@ -238,11 +238,12 @@ function removeCard(index){
 function exportCard(id){
 	console.log('#'+id);
 	$('.cardbuttons').hide();
+	$('.cardbox').css('box-shadow','unset');
     html2canvas($('#'+id)[0]).then((canvas) => {
 		console.log(canvas);
 		$('.cardbuttons').show();
+		$('.cardbox').css('box-shadow','0px 2px 2px #ccc');
         var a = document.createElement('a');
-        // toDataURL defaults to png, so we need to request a jpeg, then convert for file download.
         a.href = canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream");
         a.download = 'project_card.jpg';
         a.click();
