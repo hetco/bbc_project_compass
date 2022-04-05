@@ -239,7 +239,7 @@ function exportCard(id){
 	console.log('#'+id);
 	$('.cardbuttons').hide();
 	$('.cardbox').css('box-shadow','unset');
-    html2canvas($('#'+id)[0]).then((canvas) => {
+    html2canvas($('#'+id)[0],{'scale':2}).then((canvas) => {
 		console.log(canvas);
 		$('.cardbuttons').show();
 		$('.cardbox').css('box-shadow','0px 2px 2px #ccc');
