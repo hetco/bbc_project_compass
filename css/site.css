@@ -63,7 +63,7 @@ body {
 	margin-bottom:0px;
 	text-transform: uppercase;
 	font-weight:300;
-	font-size:1rem;
+	font-size:0.8rem;
 }
 
 .projectcard_tagline {
@@ -71,12 +71,16 @@ body {
 	color:#777;
 }
 
+.projectcard_tagline:first-letter {
+    text-transform: uppercase;
+}
+
 .inputtext {
 	font-weight:700;
 }
 
 .cardbox {
-	min-height:400px;
+	min-height:430px;
 	position: relative;
 	margin-bottom:30px;
 	max-width:300px;
