@@ -4,11 +4,18 @@ body {
 
 #screen1 {
 	min-height:880px;
-	background-image:url(../images/compass.jpg);
+	background-image:url(../images/Background_Figures.png);
 	background-size:     cover;
 	background-repeat:   no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
+	padding-left:15px;
+	padding-right:15px;
+}
+
+#screen2 {
+	min-height:880px;
+	background-color:#b4c8c8;
 	padding-left:15px;
 	padding-right:15px;
 }
@@ -144,4 +151,10 @@ body {
 
 #question2 {
 	width:80%;
+}
+
+#cardcontainer {
+	max-width:1200px;
+	margin-left:auto;
+	margin-right:auto;
 }

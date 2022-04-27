@@ -31,25 +31,26 @@ function updateTags(){
 		let tagboxID = '#tagbox_'+i;
 		$(tagboxID).html('');
 
+		if(i!=2){
 
+			tags.forEach(function(tag,j){
 
-		tags.forEach(function(tag,j){
-
-			let html = `
-				<div class="tag label label-info">
-  					<span>{{ tag }}</span>
-  					<i id="{{ tagid }}" class="bi bi-x"></i>
-				</div>`
-			html = html.replace('{{ tag }}',tag);
-			let tagID = 'tag_'+i+'_'+j;
-			html = html.replace('{{ tagid }}',tagID);
-			$(tagboxID).append(html);
-			$('#'+tagID).on('click',function(){
-				answers[i].splice(j,1);
-				updateTags();
-				updateCreateCard();
+				let html = `
+					<div class="tag label label-info">
+	  					<span>{{ tag }}</span>
+	  					<i id="{{ tagid }}" class="bi bi-x"></i>
+					</div>`
+				html = html.replace('{{ tag }}',tag);
+				let tagID = 'tag_'+i+'_'+j;
+				html = html.replace('{{ tagid }}',tagID);
+				$(tagboxID).append(html);
+				$('#'+tagID).on('click',function(){
+					answers[i].splice(j,1);
+					updateTags();
+					updateCreateCard();
+				});
 			});
-		});
+		}
 	});
 }
 
@@ -71,7 +72,7 @@ function updateCreateCard(){
 	$('#createcard_researchtitle').html(research);
 	$('#createcard_researchdetails').html(answers[3][0]);
 	if(research!=undefined){
-		$('#createcard_researchimage').html('<img width="100%" src="images/'+research+'.gif" />');
+		$('#createcard_researchimage').html('<img width="100%" src="images/'+research+'_Icon.png" />');
 	}	
 }
 
@@ -133,7 +134,7 @@ function createCard(cardOptions,index){
 
 	                </div>
 	                <div class="col-4">
-	                    <div id="researchimage"><img width="100%" src="images/{{ researchimage }}.gif" /></div>
+	                    <div id="researchimage"><img width="100%" src="images/{{ researchimage }}_Icon.png" /></div>
 	                </div>
 	            </div>
 	            <p class="researchtitle">A project to</p> 
